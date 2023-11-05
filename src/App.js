@@ -26,7 +26,7 @@ function App() {
      .then(result=>setcountrySpecificdata(result))
 
               //    Graph data
-        fetch(' https://disease.sh/v3/covid-19/historical/all?lastdays=all')
+         fetch(' https://disease.sh/v3/covid-19/historical/all?lastdays=all')
         .then(response=>response.json())
         .then(result=>setGraphData(result))
 
